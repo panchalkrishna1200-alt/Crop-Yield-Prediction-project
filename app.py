@@ -17,19 +17,19 @@ warnings.filterwarnings("ignore")
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from utils.data_loader import load_data
+from data_loader import load_data
 from model import predict
 
-from utils.data_loader import (
+from data_loader import (
     load_data, clean_data, encode_features,
     get_feature_matrix, dataset_info
 )
-from utils.eda import (
+from eda import (
     plot_yield_distribution, plot_top_crops, plot_yield_by_season,
     plot_yield_trend, plot_top_states, plot_correlation,
     plot_crop_season_heatmap
 )
-from utils.model import (
+from model import (
     split_data, train_all_models, results_to_df,
     cross_validate_model, tune_random_forest,
     plot_model_comparison, plot_actual_vs_predicted,

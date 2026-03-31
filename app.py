@@ -6,6 +6,7 @@ Run:  streamlit run app.py
 """
 
 import os
+import sys
 import pickle
 import numpy as np
 import pandas as pd
@@ -13,6 +14,10 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from utils.data_loader import load_data
 
 from utils.data_loader import (
     load_data, clean_data, encode_features,

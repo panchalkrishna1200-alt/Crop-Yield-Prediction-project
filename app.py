@@ -18,6 +18,7 @@ warnings.filterwarnings("ignore")
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from utils.data_loader import load_data
+from model import predict
 
 from utils.data_loader import (
     load_data, clean_data, encode_features,

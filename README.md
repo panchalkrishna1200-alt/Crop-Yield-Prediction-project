@@ -1,3 +1,4 @@
+link: https://crop-yield-prediction-project-dven67hhcglw92tjc5fawt.streamlit.app/
 # 🌾 CropCast — Crop Yield Prediction
 
 A machine learning project that predicts **crop yield (kg/hectare)** based on state,
